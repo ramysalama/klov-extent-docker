@@ -1,0 +1,15 @@
+
+klov:
+  image: klov:v1
+  ports:
+  - 80:80
+  links:
+  - mongodb:mongodb
+
+mongodb:
+  image: mongo:3.2
+  ports:
+  - 27017:27017
+  
+
+ 
