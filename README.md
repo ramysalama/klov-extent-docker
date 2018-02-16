@@ -1,14 +1,14 @@
 # Klov-Extent-Docker
 This is an implementation of KLOV reporting server & Mongo DB on Docker container
 
-  <B>Build:
+  -<b>Build:</b></br>
   docker build -t klov:v1 .
 
-  <B>Run:
+  -<b>Run:</b></br>
   docker-compose up -d  
 
-  <Access>
-  You can access KLOV server UI from http://localhost/
-  
+  <b>Access:</b></br>
+  KLOV server UI : http://localhost/
+  </br>
   For more information about KLOV report server: 
   http://extentreports.com/docs/versions/3/java/#klov-settings
