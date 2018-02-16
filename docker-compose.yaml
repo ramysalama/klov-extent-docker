@@ -1,6 +1,6 @@
 
 klov:
-  image: klov:v1
+  image: ramysalama/klov-extent-docker
   ports:
   - 80:80
   links:
