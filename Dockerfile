@@ -1,13 +1,6 @@
 
 FROM openjdk:8 as java
 
-#FROM mongo:3.2
-
-#RUN /usr/sbin/useradd admin
-#RUN echo admin:admin | chpasswd
-
-#COPY --from=java /docker-java-home/jre .
-
 ENV src_folder /sde/
 
 COPY . $src_folder
