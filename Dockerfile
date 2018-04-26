@@ -1,12 +1,12 @@
 
-FROM openjdk:8 as java
+FROM openjdk:8-jre-slim as java
 
 ENV src_folder /sde/
 
-COPY . $src_folder
+COPY klov-0.1.0 $src_folder/klov-0.1.0
 
-RUN chmod -R 755 /sde
-WORKDIR /sde/klov-0.1.0
+RUN chmod -R 755 $src_folder
+WORKDIR $src_folder/klov-0.1.0
 
 EXPOSE 80
 
