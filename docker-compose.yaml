@@ -1,14 +1,18 @@
-
 klov:
-  image: ramysalama/klov-extent-docker
+  image: klov:v1
   ports:
   - 80:80
   links:
   - mongodb:mongodb
+  - redis:redis
+  volumes:
+  - ./datadir/klov:/sde/klov-0.1.0/upload/reports/
+  restart: always
 
 mongodb:
   image: mongo:3.2
   ports:
   - 27017:27017
   volumes:
-  - ./datadir:/data/db
+  - ./datadir/mongodb:/data/db
+  restart: always
