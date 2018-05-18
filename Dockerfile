@@ -1,5 +1,5 @@
 
-FROM openjdk:8-jre-alpine as java
+FROM openjdk:8-jdk-alpine as java
 
 ENV src_folder /sde/
 
