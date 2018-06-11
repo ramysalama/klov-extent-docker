@@ -1,4 +1,7 @@
 klov:
+  build:
+      context: .
+      dockerfile: Dockerfile
   image: klov:v1
   ports:
   - 80:80
